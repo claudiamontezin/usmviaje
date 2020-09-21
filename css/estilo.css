@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#desplazada {
+  width: 100%;
+  position: relative;
+  bottom: 80px;
+
+  z-index: 1;
+}
+#desplazada .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.bggris {
+  background: #a8a8a8;
+}
+p {
+  padding-left: 20px;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+#navbar li a {
+  color: white;
+}
+.nav a {
+  font-size: 1.2em;
+}
+.intro {
+  border: 1px solid gray;
+}
+.principal {
+  text-align: center;
+}
+H3 {
+  text-align: center;
+}
+.form-group label {
+  color: white;
+}
+.unidad {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+.txtunidad {
+    width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  color: white;
+}
+.etapas{
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+   
+}
+.etapas h3{
+    overflow: hidden;
+    text-align: center;
+}
+ .unidad:hover{
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transition-duration: 1s;
+    z-index: 1;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.unidad:hover h3{
+    color: black;
+    font-size: 2em;
+    margin-top: 40%;
+    transition-duration: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+#contacto{
+    overflow: hidden;
+}
