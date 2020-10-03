@@ -17,15 +17,21 @@
 </head>
 <body>
     <!--barra de navegacion con formulario de contacto-->
-    <nav  id="navbar" class="navbar navbar-expand-lg navbar-light bg-light  bg-dark " >
+    <nav  id="navbar" class="navbar navbar-expand-md navbar-light bg-light  bg-dark " >
         <a id="home" class="navbar-brand text-white-50">U.S.M</a>
+        <button	class="navbar-toggler"	type="button"	data-toggle="collapse"
+        data-target="#navbarSupportedContent"	aria-controls="navbarSupportedContent"
+        aria-expanded="false"	aria-label="Toggle	navigation">
+        <span	class="navbar-toggler-icon"></span>
+        </button>
+
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active ">
-                    <a class="nav-link" href="index1.html" target="_blanc">Quienes somos <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index1.html" target="_blank">Quienes somos <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index1.html">Qué hacemos <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index1.html" target="_blank">Qué hacemos <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a type="button" class="btn btn-primary" data-toggle="collapse" data-target="#contacto">Contactanos</a>
@@ -67,17 +73,17 @@
     </nav>
 
     <!--aca empieza jumbotron-->
-    <div   class="jumbotron jumbotron-fluid bggris pt-1"  >
+    <div  id="jumbotron" class="jumbotron jumbotron-fluid bggris pt-1  d-md-none d-md-block"  >
         <div class="container-fluid">
             <div class="row ">
-                <div class="col-2 align-self-center justify-content-center " >
+                <div class="col-2 d-none d-xs-block d-sm-block align-self-center justify-content-center  " >
                                   
                 <img class="rounded-circle" width="100%" height="auto" src="imagenes/Photos/usm_logo.jpg" alt="logousm">
                 </div>
             
-                <div  class="col-10 ">
+                <div  class="col-10  d-none d-xs-block d-sm-block">
                     <h1 class="display-3 text-center">U.S.M.</h1>      
-                 <p  class="display-3 text-center">Travesía a Ing.Jacobacci</p>
+                 <p  class="display-3 text-center ">Travesía a Ing.Jacobacci</p>
                 </div>
         </div>
       </div>        
@@ -87,7 +93,7 @@
     <!--fotos solapadas- link a las etapas-->
     <div id="desplazada" class="container-fluid p-0 ">
         <div class="row " >
-            <div class="col-3">            
+            <div class="col-12 col-md-3 ">            
                 <a href="#primera" class="unidad ">
                      <img  class="img-fluid" src="imagenes/Photos/IMG-20200311-WA0062.jpg" alt="foto1" width="100%" height="auto">
                          <div class="txtunidad ">
@@ -97,7 +103,7 @@
             </div>
             </a>
         </div>
-        <div class="col-3" class="etapas">            
+        <div class="col-12  col-md-3" class="etapas">            
             <a href="#segunda" class="unidad ">
             <img  class="img-fluid" src="imagenes/Photos/IMG-20200311-WA0015.jpg" alt="foto2" width="100%" height="auto">
             <div class="txtunidad ">
@@ -107,7 +113,7 @@
             </div>
             </a>
         </div>
-        <div class="col-3">            
+        <div class="col-12 col-md-3">            
             <a href="#tercera" class="unidad ">
             <img  class="img-fluid" src="imagenes/Photos/IMG-20200311-WA0027.jpg" alt="foto3"  width="100%" height="auto">
             <div class="txtunidad ">
@@ -117,7 +123,7 @@
             </div>
             </a>
         </div>
-        <div class="col-3">            
+        <div class="col-12 col-md-3">            
             <a href="#cuarta" class="unidad ">
             <img  class="img-fluid" src="imagenes/Photos/IMG-20200311-WA0024.jpg" alt="fot43"  width="100%" height="auto">
             <div class="txtunidad ">
@@ -133,12 +139,12 @@
     <!--cuerpo principal-->    
     
     
-    <main   class="container-fluid ">   
+    <main   class="container-fluid d-block ">   
         
         <!--introduccion-->
 
 <div  class="row border border-secondary">
-    <div class="col-9 ">
+    <div class="col-12 col-md-9  ">
         <div class="row">
             <h2>Travesía a Ing.Jacobacci</h2>
             <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis maiores modi qui ipsa esse aperiam mollitia, quam maxime rem necessitatibus delectus voluptas tenetur minus, repellat soluta, provident a earum voluptatem?</p>
@@ -157,9 +163,12 @@
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class=" col-12 col-md-3 " >
         <h3>Mapa de Ruta</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d1561847.995820504!2d-70.74948440130308!3d-40.13149319924272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x960a30ee145c2355%3A0x488e3620b435393c!2sCipolletti%2C%20R%C3%ADo%20Negro!3m2!1d-38.938770999999996!2d-67.9954929!4m5!1s0x96045338fdd49529%3A0x82e9adb44a631f21!2sIngeniero%20Jacobacci%2C%20R%C3%ADo%20Negro!3m2!1d-41.329889099999995!2d-69.5480038!4m5!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sBariloche%2C%20R%C3%ADo%20Negro!3m2!1d-41.1334722!2d-71.3102778!4m5!1s0x9610bf42e48faa93%3A0x205ebc786470b636!2sVilla%20La%20Angostura%2C%20Neuqu%C3%A9n!3m2!1d-40.762742599999996!2d-71.6417984!4m5!1s0x960a30ee145c2355%3A0x488e3620b435393c!2sCipolletti%2C%20R%C3%ADo%20Negro!3m2!1d-38.938770999999996!2d-67.9954929!5e0!3m2!1ses-419!2sar!4v1601586763265!5m2!1ses-419!2sar" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
+        <<div class="row">
+            
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d1561847.995820504!2d-70.74948440130308!3d-40.13149319924272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x960a30ee145c2355%3A0x488e3620b435393c!2sCipolletti%2C%20R%C3%ADo%20Negro!3m2!1d-38.938770999999996!2d-67.9954929!4m5!1s0x96045338fdd49529%3A0x82e9adb44a631f21!2sIngeniero%20Jacobacci%2C%20R%C3%ADo%20Negro!3m2!1d-41.329889099999995!2d-69.5480038!4m5!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sBariloche%2C%20R%C3%ADo%20Negro!3m2!1d-41.1334722!2d-71.3102778!4m5!1s0x9610bf42e48faa93%3A0x205ebc786470b636!2sVilla%20La%20Angostura%2C%20Neuqu%C3%A9n!3m2!1d-40.762742599999996!2d-71.6417984!4m5!1s0x960a30ee145c2355%3A0x488e3620b435393c!2sCipolletti%2C%20R%C3%ADo%20Negro!3m2!1d-38.938770999999996!2d-67.9954929!5e0!3m2!1ses-419!2sar!4v1601586763265!5m2!1ses-419!2sar" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  </div>  
               
               <div class="btn-group" role="group" aria-label="Button group">
                 <a href="#home" class="btn btn-link" type="button">home</a>
@@ -170,7 +179,7 @@
 
 <!--primera etapa-->
 <div  class="row border border-secondary mt-3 pt-3">
-        <div id="primera" class="col-8  ">
+        <div id="primera" class="col-12  col-md-8  ">
                 <h2>Primera Etapa</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
@@ -179,17 +188,17 @@
                     <a href="#home" class="btn btn-link" type="button">home</a>
                 </div>
             </div>
-            <div class="col-4 ">
+            <div class="col-12  col-md-4 ">
                 <img class="img-thumbnail" src="imagenes/Photos/IMG-20200311-WA0027.jpg" alt="etapa1" width="100%" height="auto">
             </div>
         
 </div>
         <!--segunda etapa-->
         <div  class="row border border-secondary mt-3 pt-3">
-            <div id="segunda" class="col-4">
+            <div id="segunda" class="col-12 col-md-4">
                 <img class="img-thumbnail" src="imagenes/Photos/IMG-20200311-WA0018.jpg" alt="etapa2" width="100%" height="auto">
             </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                         <h2>Segunda Etapa</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
@@ -211,7 +220,7 @@
 <!-- tercera  etapa-->
 <div class="row border border-secondary mt-3 pt-3">
     
-        <div id="tercera" class="col-8">
+        <div id="tercera" class="col-12 col-md-8">
                 <h2>Tercera Etapa</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
@@ -222,17 +231,17 @@
                 </div>
 
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                 <img class="img-thumbnail" src="imagenes/Photos/IMG-20200311-WA0058.jpg" alt="etapa3" width="100%" height="auto">
             </div>
 </div>
         
         <!--cuarta etapa-->
         <div class="row border border-secondary mt-3 pt-3">
-            <div id="cuarta" class="col-4">
+            <div id="cuarta" class="col-12 col-md-4">
                 <img class="img-thumbnail" src="imagenes/Photos/IMG-20200311-WA0015.jpg" alt="etapa4" width="100%" height="auto">
             </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                         <h2>Cuarta Etapa</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repudiandae quis, doloribus incidunt quibusdam voluptatum? Cumque, minima! Porro at ex dolor fuga quibusdam consequuntur voluptate animi libero commodi inventore! Modi?</p>
@@ -259,7 +268,7 @@
         
     </div>
     <div class="row">
-        <div class="col-9">
+        <div class="col-12 col-md-9">
         <nav class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link active" href="#home">Home</a>
@@ -269,7 +278,7 @@
             </li>
         </nav>
         </div>
-        <div class="col-3 justify-content-end ">
+        <div class="col-12 col-md-3 justify-content-end ">
           <nav  class="nav ">
             <a class="nav-link" href="#" class="facebook" target="_blank"><i class="fa fa-facebook" target="_blank"></i></a>
             <a class="nav-link" href="#" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
